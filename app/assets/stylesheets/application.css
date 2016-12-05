@@ -49,3 +49,8 @@ body {
   max-height: 200px;
   float: left;
 }
+
+.me-pic img {
+  display: inline-block;
+  max-height: 200px;
+}
