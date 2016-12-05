@@ -1,7 +1,46 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Project.create([
+  {
+    project_name: "AMZ Pro",
+    description: "",
+    sub_title: "",
+    primary_image: "",
+    index_image: "http://i.imgur.com/uGT7Nq5.png",
+    github: "",
+    url: "https://amzpro.herokuapp.com",
+    tech: "",
+    completion_date: ""
+  },
+  {
+    project_name: "Band Wagon",
+    description: "",
+    sub_title: "",
+    primary_image: "",
+    index_image: "http://i.imgur.com/6mN7GKc.png",
+    github: "",
+    url: "http://hop-on-the-bandwagon.herokuapp.com",
+    tech: "",
+    completion_date: ""
+  },
+  {
+    project_name: "Angular Books",
+    description: "",
+    sub_title: "",
+    primary_image: "",
+    index_image: "http://i.imgur.com/ry4ledR.png",
+    github: "",
+    url: "https://rhamill1.github.io/angular-books-crud-lab/",
+    tech: "",
+    completion_date: ""
+  },
+  {
+    project_name: "Wanderly",
+    description: "",
+    sub_title: "",
+    primary_image: "",
+    index_image: "http://i.imgur.com/4mt2jgj.png",
+    github: "",
+    url: "http://wanderly.herokuapp.com/",
+    tech: "",
+    completion_date: ""
+  }
+])

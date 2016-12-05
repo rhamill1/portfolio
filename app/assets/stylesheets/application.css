@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.landing-background {
+  top: 0;
+  height: 500px;
+  background-color: #31393a;
+  color: white;
+  padding: 1em;
+}
+
+.white-scroll {
+  height: 200px;
+}
+
+.project-index {
+  background-color: #000040;
+  height: 500px;
+  color: white;
+  margin: auto;
+}
+
+.about-me {
+  background-color: #a0aaac;
+  height: 500px;
+  color: white;
+}
+
+.project img {
+  display: inline-block;
+  max-height: 200px;
+  float: left;
+}
+
+.me-pic img {
+  display: inline-block;
+  max-height: 200px;
+}
