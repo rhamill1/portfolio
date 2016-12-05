@@ -41,13 +41,18 @@ body {
 }
 
 .full-stack-title {
-  float: middle;
-  margin-left: 5em;
   text-align: center
 }
 
 .white-scroll {
   height: 200px;
+}
+
+.white-scroll i {
+  float: right;
+  margin: auto;
+  width: 50%;
+  margin-top: 5em;
 }
 
 .project-index {
