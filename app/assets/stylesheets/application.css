@@ -35,10 +35,17 @@ body {
   background-color: #000040;
   height: 500px;
   color: white;
+  margin: auto;
 }
 
 .about-me {
   background-color: #a0aaac;
   height: 500px;
   color: white;
+}
+
+.project img {
+  display: inline-block;
+  max-height: 200px;
+  float: left;
 }
