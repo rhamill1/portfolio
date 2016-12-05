@@ -27,6 +27,25 @@ body {
   padding: 1em;
 }
 
+.landing-background h1, h3, h5 {
+  font-weight: 200;
+}
+
+.landing-background h3, h5 {
+  margin: 0;
+}
+
+.landing-background h1 {
+  margin: 5em 0 1em 0;
+
+}
+
+.full-stack-title {
+  float: middle;
+  margin-left: 5em;
+  text-align: center
+}
+
 .white-scroll {
   height: 200px;
 }
@@ -56,10 +75,17 @@ body {
 }
 
 footer {
-    background: #a7abb1;
+  background: #a7abb1;
   padding: 0 1em 1em 1em;
   position: relative;
   bottom: 0px;
   width: 100%;
-  height: 6em;
+  height: 10em;
+  background-color: #31393a;
+  padding: 1em;
+}
+
+footer a {
+  color: white
+  text-decoration: none;
 }
