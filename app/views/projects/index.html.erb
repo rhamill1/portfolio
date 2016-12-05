@@ -1,6 +1,18 @@
-you're on the index page!<br><br>
-
-
-<% @projects.each do |project| %>
-  <%=  project.project_name %>
-<% end %>
+<div class='landing-background'>
+  <div>
+    <h3>Ryan Hamill</h3>
+    <h5>Full Stack Developer</h5>
+  </div>
+  <div>
+    <h1>Full Stack Development</h1>
+    <h5>Ruby, Rails, SQL, HTML, CSS</h5>
+  </div>
+</div>
+<div class='white-scroll'></div>
+<div class='project-index'>
+  <% @projects.each do |project| %>
+    <%=  project.project_name %>
+  <% end %>
+</div>
+<div class='white-scroll'></div>
+<div class='about-me'></div>
