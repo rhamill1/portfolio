@@ -1,0 +1,37 @@
+<div class='content'>
+  <div class="form-content-white">
+    <h1>Add a new Project</h1>
+    <%= form_for @project do |f| %>
+      <div class="container-gray">
+        <div class="input-field">
+          <%= f.text_field :project_name, placeholder: "project_name" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :description, placeholder: "description" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :sub_title, placeholder: "sub_title" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :primary_image, placeholder: "primary_image" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :index_image, placeholder: "index_image" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :github, placeholder: "github" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :url, placeholder: "url" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :tech, placeholder: "tech" %>
+        </div>
+        <div class="input-field">
+          <%= f.text_field :completion_date, placeholder: "completion_date" %>
+        </div>
+        <%= f.submit "Sign Up", class: "button" %>
+      </div>
+    <% end %>
+  </div>
+</div>
