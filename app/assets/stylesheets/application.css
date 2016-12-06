@@ -71,13 +71,14 @@ body {
 .project img {
   display: inline-block;
   float: left;
-  width: 48%;
+  width: 33.3%;
   vertical-align: top;
 }
 
 .me-pic img {
   display: inline-block;
   max-height: 200px;
+  margin: 8em 1em 8em 1em;
 }
 
 footer {
@@ -100,3 +101,9 @@ footer a {
   font-size: 12px;
 }
 
+.me-pic, .bio, .skill {
+  width: 33%;
+  color: black;
+  float: left;
+  margin-top: 1em
+}
