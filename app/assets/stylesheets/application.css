@@ -107,3 +107,22 @@ footer a {
   float: left;
   margin-top: 1em;
 }
+
+.bio p {
+  font-weight: 200;
+  font-size: 14px;
+  margin-right: 1em;
+  margin-top: 2px;
+}
+
+.bio h2 {
+  margin-bottom: 2px;
+}
+
+.skill h2 {
+  margin-bottom: 2px;
+}
+
+.skill p {
+  margin: 0 0 1em 0;
+}
