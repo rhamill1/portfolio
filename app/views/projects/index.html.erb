@@ -14,7 +14,7 @@
 <div class='project-index'>
   <% @projects.each do |project| %>
     <div class='project'>
-      <%= image_tag(project.index_image) %>
+      <%= link_to( image_tag(project.index_image), project_path(project)) %>
     </div>
   <% end %>
 </div>
