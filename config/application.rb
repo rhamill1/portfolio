@@ -23,3 +23,5 @@ module Portfolio
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+config.action_dispatch.default_headers.clear
