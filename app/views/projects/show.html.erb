@@ -1,0 +1,31 @@
+<div class='show-content'>
+  <h1>
+    <%= @project.project_name %>
+  </h1>
+  <h3>
+    <%= @project.sub_title %><br>
+  </h3>
+  <h5>
+    <strong>
+      <%= @project.tech %><br>
+    </strong>
+  </h5>
+  <div class='project-image-wrapper'>
+    <div class='project-image'>
+      <%= image_tag(@project.primary_image) %>
+    </div><br>
+  </div>
+  <p>
+    <%= @project.description %>
+  </p><br>
+  <p>
+    <%= link_to('visit the project', @project.url) %>
+    <span>|</span>
+    <%= link_to('project git repo', @project.github) %><br><br>
+  </p>
+  <h4>
+    completed
+    <%= @project.completion_date.strftime("%B") %>
+    <%= @project.completion_date.year %>
+  </h4>
+</div>
