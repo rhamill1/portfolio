@@ -141,3 +141,38 @@ footer a {
 .project-image img {
   height: 500px;
 }
+
+.show-content {
+  position: relative;
+}
+
+.show-content h1, .show-content h3, .show-content p, .show-content h5, .show-content h4 {
+  text-align: center;
+}
+
+.show-content img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.show-content h5 {
+  margin-bottom: 1em;
+}
+
+.project-image-wrapper {
+  background-color: #727272;
+}
+
+.show-content h4 {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.show-content a, .show-content span {
+  color: #31393a;
+  text-decoration: none;
+  margin: 0 1em 0 1em;
+  font-weight: 200;
+  font-size: 12px;
+}

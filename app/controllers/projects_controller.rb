@@ -1,3 +1,5 @@
+require 'date'
+
 class ProjectsController < ApplicationController
 
   before_action :get_project, only: [:show]
