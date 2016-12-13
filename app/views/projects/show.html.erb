@@ -1,11 +1,17 @@
-you're on the show page
-<br>
-<%= @project.project_name %><br>
-<%= @project.description %><br>
-<%= @project.sub_title %><br>
-<%= @project.primary_image %><br>
-<%= @project.index_image %><br>
+
+<h1>
+  <%= @project.project_name %>
+</h1><br>
+<h3>
+  <%= @project.sub_title %><br>
+  <%= @project.tech %>
+</h3><br>
+<div class='project-image'>
+  <%= image_tag(@project.primary_image) %>
+</div><br>
+<p>
+  <%= @project.description %>
+</p><br>
 <%= @project.github %><br>
 <%= @project.url %><br>
-<%= @project.tech %><br>
 <%= @project.completion_date %>

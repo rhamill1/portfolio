@@ -137,3 +137,7 @@ footer a {
   margin-top: 4em;
   width: 30%;
 }
+
+.project-image img {
+  height: 500px;
+}
