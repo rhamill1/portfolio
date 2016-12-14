@@ -176,3 +176,14 @@ footer a {
   font-weight: 200;
   font-size: 12px;
 }
+
+.home a {
+  position: fixed;
+  float: right;
+  display: block;
+  margin: 1em 3em 0 3em;
+  color: #31393a;
+  text-decoration: none !important;
+  font-size: 10px;
+  z-index: 1;
+}
