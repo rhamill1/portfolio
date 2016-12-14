@@ -187,3 +187,7 @@ footer a {
   font-size: 10px;
   z-index: 1;
 }
+
+.project img:hover {
+  opacity: 0.5;
+}
