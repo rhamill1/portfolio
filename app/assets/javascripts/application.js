@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+window.onload = function() {
+
+  $( "#chevron-scroll" ).click(function() {
+    $("html, body").animate({ scrollTop: 650 }, 1000);
+  });
+
+}
