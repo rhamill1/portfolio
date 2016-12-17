@@ -64,7 +64,7 @@ body {
 
 .about-me {
   background-color: #a0aaac;
-  height: 500px;
+  height: 30em;
   color: white;
 }
 
@@ -191,4 +191,36 @@ footer a {
 
 .project img:hover {
   opacity: 0.5;
+}
+
+
+@media (max-width: 950px) {
+  .about-me {
+    height: 47em;
+  }
+
+  .bio {
+    clear: both;
+    margin: 0 1em 0 1em;
+    width: auto;
+  }
+
+  .bio p {
+    margin-right: 0;
+  }
+
+  .me-pic img {
+    margin: 1em;
+  }
+
+  .skill h2 {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about-me {
+    height: 55em;
+  }
 }
