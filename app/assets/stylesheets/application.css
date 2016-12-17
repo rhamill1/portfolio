@@ -216,11 +216,19 @@ footer a {
   .skill h2 {
     margin-top: 0;
   }
+
+  footer a {
+    margin: 0 6em 0 6em;
+  }
 }
 
 
 @media (max-width: 600px) {
   .about-me {
     height: 55em;
+  }
+
+  footer a {
+    margin: 0 2em 0 2em;
   }
 }
