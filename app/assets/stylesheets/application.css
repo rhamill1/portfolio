@@ -193,6 +193,10 @@ footer a {
   opacity: 0.5;
 }
 
+.white-scroll i:hover {
+  opacity: 0.5;
+}
+
 
 @media (max-width: 950px) {
   .about-me {
