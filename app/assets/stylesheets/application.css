@@ -56,7 +56,7 @@ body {
 }
 
 .project-index {
-  background-color: #000026;
+  background-color: #989c9c;
   height: 91em;
   color: white;
   margin: auto;
@@ -95,7 +95,7 @@ footer {
 }
 
 footer a {
-  color: #a0aaac;
+  color: #d5d7d7;
   text-decoration: none;
   margin: 0 10em 0 10em;
   font-weight: 200;
@@ -189,6 +189,9 @@ footer a {
   z-index: 1;
 }
 
+
+
+
 .project img:hover {
   opacity: 0.5;
 }
@@ -196,6 +199,12 @@ footer a {
 .white-scroll i:hover {
   opacity: 0.5;
 }
+
+footer a:hover {
+  color: white;
+}
+
+
 
 
 @media (max-width: 950px) {
