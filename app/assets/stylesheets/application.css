@@ -286,4 +286,12 @@ footer a:hover {
   .grey-media {
     display: none;
   }
+
+  .project p {
+    bottom: 3em;
+  }
+
+  .project h3 {
+    bottom: 10em;
+  }
 }
