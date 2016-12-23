@@ -57,7 +57,7 @@ body {
 
 .project-index {
   background-color: #989c9c;
-  height: 91em;
+  height: 96em;
   color: white;
   margin: auto;
 }
@@ -68,12 +68,34 @@ body {
   color: white;
 }
 
+.project {
+  max-height: 23em;
+}
+
 .project img {
   display: block;
   margin: auto;
   padding-top: 1em;
   max-width: 40em;
   vertical-align: top;
+}
+
+.project p {
+  visibility: hidden;
+  position: relative;
+  bottom: 6em;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin: 0;
+}
+
+.project h3 {
+  visibility: hidden;
+  position: relative;
+  bottom: 17em;
+  text-align: center;
+  font-weight: 500;
 }
 
 .me-pic img {
@@ -193,7 +215,15 @@ footer a {
 
 
 .project img:hover {
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+.project:hover p {
+  visibility: visible;
+}
+
+.project:hover h3 {
+  visibility: visible;
 }
 
 .white-scroll i:hover {
