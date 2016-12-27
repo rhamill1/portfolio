@@ -277,6 +277,10 @@ footer a:hover {
   footer a {
     margin: 0 6em 0 6em;
   }
+
+  #highchart_id {
+    width: 80%;
+  }
 }
 
 
@@ -307,5 +311,9 @@ footer a:hover {
 
   .project h3 {
     bottom: 10em;
+  }
+
+  #highchart_id {
+    width: 73%;
   }
 }
