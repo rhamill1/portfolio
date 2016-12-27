@@ -107,11 +107,16 @@ class ProjectsController < ApplicationController
         final_array.push([project, monday_count])
     end
 
+    first_monday_o_month_array = []
+    all_mondays.each do |monday|
+        monday.strftime("%d").to_i <= 7 ? first_monday_o_month_array.push(monday.strftime("%b %y")) : first_monday_o_month_array.push("")
+    end
+
 
 
     @chart = LazyHighCharts::HighChart.new('graph') do |f|
       # f.title(text: "Git Commits by Project", verticalAlign: 'bottom')
-      f.xAxis(categories: all_mondays)
+      f.xAxis(categories: first_monday_o_month_array)
       final_array.each do |project|
         f.series(name: project[0], yAxis: 0, data: project[1], marker: {enabled: false})
       end
