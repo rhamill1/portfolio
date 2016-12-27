@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
 
     # client / get_repos
     source_repos_owned_hash_unformatted = `curl -H 'Authorization: token ' \
-      https://api.github.com/users/rhamill1/repos`
+      https://api.github.com/users/rhamill1/repos?per_page=100`
 
     # format response
     repos_owned_hash = JSON.parse(source_repos_owned_hash_unformatted)
@@ -28,7 +28,7 @@ class ProjectsController < ApplicationController
     @all_compiled_commits = []
     @repos.each do |repo|
       # build request
-      repo_url = ' https://api.github.com/repos/rhamill1/' + repo + '/commits'
+      repo_url = ' https://api.github.com/repos/rhamill1/' + repo + '/commits?per_page=100'
       curl_repo_commits = "curl -H 'Authorization: token '" + repo_url
       source_commits_hash_unformatted = %x{ #{curl_repo_commits} }
 
