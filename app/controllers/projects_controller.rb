@@ -40,7 +40,6 @@ class ProjectsController < ApplicationController
       end
     end
 
-
     # remove non-me commits
     @compiled_commits = []
     def remove_non_author_commits(array)
@@ -49,10 +48,6 @@ class ProjectsController < ApplicationController
       end
     end
     remove_non_author_commits(@all_compiled_commits)
-
-    # render json: @compiled_commits
-
-
 
     # get commits count
     grouped_commits = @compiled_commits.group_by{|e| [e[0], Date.parse(e[2]).at_beginning_of_week]}
@@ -113,62 +108,30 @@ class ProjectsController < ApplicationController
     end
 
 
-
     @chart = LazyHighCharts::HighChart.new('graph') do |f|
-      # f.title(text: "Git Commits by Project", verticalAlign: 'bottom')
+
+      # production
       f.xAxis(categories: first_monday_o_month_array)
       final_array.each do |project|
         f.series(name: project[0], yAxis: 0, data: project[1], marker: {enabled: false})
       end
-      # f.series(name: "Project 2", yAxis: 0, data: [123, 121, 113, 128, 346])
 
-
-      # f.xAxis(categories: ["2016-12-01", "2016-12-08", "2016-12-15", "2016-12-22", "2016-12-29"])
+      # # test
+      # f.xAxis(categories: ["2016-12-01", "", "", "", ""])
       # f.series(name: "Project 1", yAxis: 0, data: [141, 50, 49, 33, 256], marker: {enabled: false})
       # f.series(name: "Project 2", yAxis: 0, data: [123, 121, 113, 128, 346], marker: {enabled: false})
 
-      # f.yAxis [
-      #   {title: {text: "by project", margin: 70} },
-      # ]
       f.legend(align: 'right', verticalAlign: 'top', y: 75, x: -50, layout: 'vertical', enabled: false)
       f.colors(["#ecd292", "#e5a267", "#d27254", "#a5494d", "#63223c"])
       f.chart({defaultSeriesType: "area",
         backgroundColor:'transparent'
       })
+      f.tooltip(backgroundColor:'#e5e5e5', headerFormat: '')
 
     end
 
-    # @chart_globals = LazyHighCharts::HighChartGlobals.new do |f|
-    #   f.global(useUTC: false)
-    #   f.chart(
-    #     backgroundColor: {
-    #       # linearGradient: [0, 0, 500, 500],
-    #       stops: [
-    #         [0, "rgb(255, 255, 255)"],
-    #         [1, "rgb(240, 240, 255)"]
-    #       ]
-    #     },
-    #     borderWidth: 2,
-    #     plotBackgroundColor: "rgba(255, 255, 255, .9)",
-    #     plotShadow: true,
-    #     plotBorderWidth: 1
-    #   )
-    #   f.lang(thousandsSep: ",")
-    #   # f.colors(["#90ed7d", "#f7a35c", "#8085e9", "#f15c80", "#e4d354"])
-    #   f.colors(["#ecd292", "#e5a267", "#d27254", "#a5494d", "#63223c"])
-    # end
-
-
-
-
-
-
-
 
   end
-
-
-
 
   def new
     @project = Project.new
