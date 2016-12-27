@@ -110,25 +110,27 @@ class ProjectsController < ApplicationController
 
 
     @chart = LazyHighCharts::HighChart.new('graph') do |f|
-      f.title(text: "Git Commits")
+      # f.title(text: "Git Commits by Project", verticalAlign: 'bottom')
       f.xAxis(categories: all_mondays)
       final_array.each do |project|
-        f.series(name: project[0], yAxis: 0, data: project[1])
+        f.series(name: project[0], yAxis: 0, data: project[1], marker: {enabled: false})
       end
       # f.series(name: "Project 2", yAxis: 0, data: [123, 121, 113, 128, 346])
 
 
       # f.xAxis(categories: ["2016-12-01", "2016-12-08", "2016-12-15", "2016-12-22", "2016-12-29"])
-      # f.series(name: "Project 1", yAxis: 0, data: [141, 50, 49, 33, 256])
-      # f.series(name: "Project 2", yAxis: 0, data: [123, 121, 113, 128, 346])
+      # f.series(name: "Project 1", yAxis: 0, data: [141, 50, 49, 33, 256], marker: {enabled: false})
+      # f.series(name: "Project 2", yAxis: 0, data: [123, 121, 113, 128, 346], marker: {enabled: false})
 
-      f.yAxis [
-        {title: {text: "by project", margin: 70} },
-      ]
-
-      f.legend(align: 'right', verticalAlign: 'top', y: 75, x: -50, layout: 'vertical')
+      # f.yAxis [
+      #   {title: {text: "by project", margin: 70} },
+      # ]
+      f.legend(align: 'right', verticalAlign: 'top', y: 75, x: -50, layout: 'vertical', enabled: false)
       f.colors(["#ecd292", "#e5a267", "#d27254", "#a5494d", "#63223c"])
-      f.chart({defaultSeriesType: "area"})
+      f.chart({defaultSeriesType: "area",
+        backgroundColor:'transparent'
+      })
+
     end
 
     # @chart_globals = LazyHighCharts::HighChartGlobals.new do |f|

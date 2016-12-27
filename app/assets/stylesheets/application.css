@@ -214,8 +214,15 @@ footer a {
 #highchart_id {
   margin: 2em 0 0 3em;
   position:absolute;
-  height: 30%;
+  height: 40%;
   width: 90%;
+  bottom: 13em;
+}
+
+.h5-bottom {
+  margin-top: 25em;
+  font-size: 09px;
+  color: #d5d7d7;
 }
 
 
