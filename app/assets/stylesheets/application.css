@@ -36,7 +36,7 @@ body {
 }
 
 .landing-background h1 {
-  margin: 5em 0 1em 0;
+  margin: 4em 0 1em 0;
 
 }
 
@@ -211,6 +211,20 @@ footer a {
   z-index: 1;
 }
 
+#highchart_id {
+  margin: 2em 0 0 3em;
+  position:absolute;
+  height: 40%;
+  width: 90%;
+  bottom: 13em;
+}
+
+.h5-bottom {
+  margin-top: 25em;
+  font-size: 09px;
+  color: #d5d7d7;
+}
+
 
 
 
@@ -263,6 +277,10 @@ footer a:hover {
   footer a {
     margin: 0 6em 0 6em;
   }
+
+  #highchart_id {
+    width: 80%;
+  }
 }
 
 
@@ -293,5 +311,9 @@ footer a:hover {
 
   .project h3 {
     bottom: 10em;
+  }
+
+  #highchart_id {
+    width: 73%;
   }
 }
