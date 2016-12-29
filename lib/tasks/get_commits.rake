@@ -6,13 +6,13 @@ namespace :process do
 
 
     # prod - client / get_repos
-    source_repos_owned_hash_unformatted = 'curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
-      https://api.github.com/users/rhamill1/repos?per_page=100'
+    source_repos_owned_hash_unformatted = curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
+      https://api.github.com/users/rhamill1/repos?per_page=100
 
     # dev - client / get_repos
     # source_repos_owned_hash_unformatted = `curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
     #   https://api.github.com/users/rhamill1/repos?per_page=100`
-    #   p source_repos_owned_hash_unformatted
+      p source_repos_owned_hash_unformatted
 
     # format response
     repos_owned_hash = JSON.parse(source_repos_owned_hash_unformatted)
