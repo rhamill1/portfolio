@@ -4,11 +4,9 @@ namespace :process do
 
     require 'json'
 
-    p ENV['GIT_AUTHORIZATION_STRING']
     # client / get_repos
     source_repos_owned_hash_unformatted = `curl -H ENV['GIT_AUTHORIZATION_STRING'] \
       https://api.github.com/users/rhamill1/repos?per_page=100`
-      p source_repos_owned_hash_unformatted
 
     # dev client / get_repos
     # source_repos_owned_hash_unformatted = `curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
@@ -16,15 +14,12 @@ namespace :process do
 
     # format response
     repos_owned_hash = JSON.parse(source_repos_owned_hash_unformatted)
-      p repos_owned_hash
 
     # get repo names
     @repos = []
-      p @repos
     repos_owned_hash.each do |project|
       @repos.push(project["name"])
     end
-      p @repos
 
     # iterate through repos
     @all_compiled_commits = []
@@ -40,6 +35,7 @@ namespace :process do
         @all_compiled_commits.push([repo, commit[:commit][:author][:name], commit[:commit][:author][:date]])
       end
     end
+    p commits_hash
 
     # remove non-me commits
     @compiled_commits = []
