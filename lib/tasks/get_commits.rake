@@ -35,7 +35,6 @@ namespace :process do
         @all_compiled_commits.push([repo, commit[:commit][:author][:name], commit[:commit][:author][:date]])
       end
     end
-    p @all_compiled_commits
 
     # remove non-me commits
     @compiled_commits = []
