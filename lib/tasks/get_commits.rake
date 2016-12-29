@@ -4,10 +4,13 @@ namespace :process do
 
     require 'json'
 
-
     # client / get_repos
-    source_repos_owned_hash_unformatted = `curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
+    source_repos_owned_hash_unformatted = `curl -H ENV['GIT_AUTHORIZATION_STRING'] \
       https://api.github.com/users/rhamill1/repos?per_page=100`
+
+    # dev client / get_repos
+    # source_repos_owned_hash_unformatted = `curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
+    #   https://api.github.com/users/rhamill1/repos?per_page=100`
 
     # format response
     repos_owned_hash = JSON.parse(source_repos_owned_hash_unformatted)
