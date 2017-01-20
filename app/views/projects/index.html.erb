@@ -25,8 +25,20 @@
     <div class='project'>
       <%= link_to( image_tag(project.index_image), project_path(project)) %>
       <div class='project-white'>
-        <p><%= project.project_name %></p><br>
+        <h2><%= project.project_name %></h2>
+        <h4><%= project.sub_title %></h4>
         <h3><%= project.tech %></h3>
+        <h3><%= project.description %></h3>
+        <h3>
+          <%= link_to('visit the project', project.url) %>
+          <span>|</span>
+          <%= link_to('project git repo', project.github) %>
+        </h3>
+        <h3>
+          completed
+          <%= project.completion_date.strftime("%B") %>
+          <%= project.completion_date.year %>
+        </h3>
       </div>
     </div>
   <% end %>

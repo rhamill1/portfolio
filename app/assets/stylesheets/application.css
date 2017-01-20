@@ -115,22 +115,38 @@ h1, h5 {
   vertical-align: top;
 }
 
-.project p {
-  visibility: hidden;
+.project h2 {
+  padding-top: 1em;
+  visibility: visible;
   position: relative;
-  bottom: 6em;
   text-align: center;
-  color: white;
-  font-size: 50px;
+  color: #2B2B2B;
+  font-size: 35px;
   margin: 0;
+  font-weight: 900;
 }
 
-.project h3 {
-  visibility: hidden;
+.project h3, h4 {
+  visibility: visible;
   position: relative;
-  bottom: 17em;
   text-align: center;
   font-weight: 500;
+  color: #2B2B2B;
+  margin-top: 1em;
+  font-size: 15px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #2B2B2B;
+}
+
+.project h4 {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+  color: #2B2B2B;
 }
 
 .me-pic img {
