@@ -1,5 +1,12 @@
 <div class='full-stack-title'>
-  <h1>Ryan Hamill | Full Stack Development</h1>
+  <div class='title-center'>
+    <div class='bold-title'>
+      <h1>Ryan Hamill</h1>
+    </div>
+    <div class='slim-title'>
+      <h1>Full Stack Developer</h1>
+    </div>
+  </div>
   <div class='skills-top'>
     <h5>Ruby</h5>
     <h5>Rails</h5>
@@ -17,8 +24,10 @@
   <% @projects.each do |project| %>
     <div class='project'>
       <%= link_to( image_tag(project.index_image), project_path(project)) %>
-      <p><%= project.project_name %></p><br>
-      <h3><%= project.tech %></h3>
+      <div class='project-white'>
+        <p><%= project.project_name %></p><br>
+        <h3><%= project.tech %></h3>
+      </div>
     </div>
   <% end %>
 </div>

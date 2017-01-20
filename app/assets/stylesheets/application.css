@@ -30,7 +30,23 @@ h1, h5 {
   color: #2B2B2B;
 }
 
+.title-center {
+  float: right;
+  width: 80%;
+}
+
+.bold-title h1 {
+  font-weight: 900;
+  padding-right: 1em;
+}
+
+.slim-title h1 {
+  font-weight: 100;
+}
+
 .full-stack-title h1 {
+  display: block;
+  float: left;
   padding-top: 1em;
   margin-bottom: 1em;
   font-size: 45px;
@@ -51,7 +67,7 @@ h1, h5 {
 .highchart {
   text-align: center;
   height: 175px;
-  background-color: #F7F7F7;
+  background-color: #eee;
 }
 
 
@@ -67,7 +83,7 @@ h1, h5 {
 }
 
 .project-index {
-  background-color: #FFF;
+  background-color: #F7F7F7;
   height: 96em;
   color: white;
   margin: auto;
@@ -83,10 +99,19 @@ h1, h5 {
   max-height: 23em;
 }
 
+.project-white {
+  background-color: #FFF;
+  width: 55%;
+  height: 17em;
+  display: inline-block;
+  margin: 3em 0 0 0;
+  z-index: -1;
+}
+
 .project img {
   margin: 2em 0 0 2em;
   padding-top: 1em;
-  max-width: 40em;
+  max-height: 17em;
   vertical-align: top;
 }
 
