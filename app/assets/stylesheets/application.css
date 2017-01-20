@@ -19,30 +19,41 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.landing-background {
-  top: 0;
-  height: 500px;
-  background-color: #31393a;
-  color: white;
-  padding: 1em;
-}
-
-.landing-background h1, h3, h5 {
-  font-weight: 200;
-}
-
-.landing-background h3, h5 {
+h1, h5 {
   margin: 0;
 }
 
-.landing-background h1 {
-  margin: 4em 0 1em 0;
-
-}
-
 .full-stack-title {
-  text-align: center
+  text-align: center;
+  height: 175px;
+  background-color: #FFF;
+  color: #2B2B2B;
 }
+
+.full-stack-title h1 {
+  padding-top: 1em;
+  margin-bottom: 1em;
+  font-size: 45px;
+}
+
+.skills-top {
+  float: right;
+  width: 70%;
+}
+
+.full-stack-title h5 {
+  margin: 0 2em;
+  display: block;
+  float: left;
+  font-weight: 500;
+}
+
+.highchart {
+  text-align: center;
+  height: 175px;
+  background-color: #F7F7F7;
+}
+
 
 .white-scroll {
   height: 200px;
@@ -56,7 +67,7 @@ body {
 }
 
 .project-index {
-  background-color: #989c9c;
+  background-color: #FFF;
   height: 96em;
   color: white;
   margin: auto;
@@ -73,8 +84,7 @@ body {
 }
 
 .project img {
-  display: block;
-  margin: auto;
+  margin: 2em 0 0 2em;
   padding-top: 1em;
   max-width: 40em;
   vertical-align: top;
@@ -213,16 +223,9 @@ footer a {
 
 #highchart_id {
   margin: 2em 0 0 3em;
-  position:absolute;
-  height: 40%;
+  position: absolute;
+  height: 130px;
   width: 90%;
-  bottom: 13em;
-}
-
-.h5-bottom {
-  margin-top: 25em;
-  font-size: 09px;
-  color: #d5d7d7;
 }
 
 

@@ -19,6 +19,15 @@ class ProjectsController < ApplicationController
     @chart = LazyHighCharts::HighChart.new('graph') do |f|
 
       f.xAxis(categories: first_monday_o_month_array)
+      f.yAxis(
+        gridLineWidth: 0,
+        labels: {
+          enabled: false
+        },
+        title: {
+          enabled: false
+        }
+      )
       final_array.each do |project|
         f.series(name: project[0], yAxis: 0, data: project[1], marker: {enabled: false})
       end
