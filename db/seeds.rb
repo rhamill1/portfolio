@@ -1,4 +1,16 @@
+
 Project.create([
+  {
+    project_name: "Farmers' Market Ipsum",
+    description: "Recreating great precedent is an efficient way to master new skills. This theme is an interpretation from scratch of Anders Noren's Hipster Ipsum. It was created using JavaScript, jQuery, CSS, HTML, Node and Express (no Bootstrap).",
+    sub_title: "Free Range Text for Your Project",
+    primary_image: "http://imgur.com/Io0yde3.png",
+    index_image: "http://imgur.com/Io0yde3.png",
+    github: "http://www.github.com/rhamill1/farmers_market_ipsum",
+    url: "https://farmersmarketipsum.herokuapp.com/",
+    tech: "JavaScript, jQuery, Stellar.js, HTML/CSS, Heroku",
+    completion_date: "January 2017"
+  },
   {
     project_name: "AMZ Pro",
     description: "An app that consumes Amazon's MWS API then aggregates and renders a logged in merchant’s sales and order data.",
