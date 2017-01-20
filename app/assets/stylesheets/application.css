@@ -72,7 +72,8 @@ h1, h5 {
 
 
 .white-scroll {
-  height: 200px;
+  height: 4em;
+  background-color: #fff;
 }
 
 .white-scroll i {
@@ -84,13 +85,13 @@ h1, h5 {
 
 .project-index {
   background-color: #F7F7F7;
-  height: 96em;
+  height: auto;
   color: white;
   margin: auto;
 }
 
 .about-me {
-  background-color: #a0aaac;
+  background-color: #f7f7f7;
   height: 30em;
   color: white;
 }
@@ -109,7 +110,7 @@ h1, h5 {
 }
 
 .project img {
-  margin: 2em 0 0 2em;
+  margin: 2em 0 2em 2em;
   padding-top: 1em;
   max-height: 17em;
   vertical-align: top;
@@ -126,7 +127,7 @@ h1, h5 {
   font-weight: 900;
 }
 
-.project h3, h4 {
+.project h3, h4, h5 {
   visibility: visible;
   position: relative;
   text-align: center;
@@ -149,6 +150,14 @@ h1, h5 {
   color: #2B2B2B;
 }
 
+.project h5 {
+  font-weight: 700;
+}
+
+.project h3 {
+  font-size: 12px;
+}
+
 .me-pic img {
   display: inline-block;
   max-height: 200px;
@@ -161,8 +170,8 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
-  height: 4em;
-  background-color: #31393a;
+  height: 350px;
+  background-color: #1a1a1a;
   padding: 4em 1em 1em 1em;
   text-align: center;
 }
@@ -197,6 +206,10 @@ footer a {
 .skill h2 {
   margin-bottom: 2px;
   margin-top: 2em;
+}
+
+.skill h5 {
+  text-align: left;
 }
 
 .skill p {
