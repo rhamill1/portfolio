@@ -313,6 +313,28 @@ footer a {
 
 
 
+footer a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-bottom: -3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ddd;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+footer a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .project img:hover {
   opacity: 0.2;
 }
