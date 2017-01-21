@@ -70,6 +70,11 @@ h1, h5 {
   background-color: #eee;
 }
 
+.highchart h5 {
+  font-size: 10px;
+  padding-top: 15em;
+}
+
 .project-index {
   background-color: #F7F7F7;
   height: auto;
@@ -83,6 +88,15 @@ h1, h5 {
   color: white;
   position: relative;
   margin-bottom: 350px;
+}
+
+.about-space{
+  height: 3em;
+}
+
+.about-white {
+  background-color: #fff;
+  height: 25em;
 }
 
 .project {
@@ -145,12 +159,13 @@ h1, h5 {
 
 .project h3 {
   font-size: 12px;
+  padding: 0 1em;
 }
 
 .me-pic img {
   display: inline-block;
   max-height: 200px;
-  margin: 8em 1em 8em 4em;
+  margin: 5em 1em 8em 4em;
 }
 
 footer {
@@ -204,8 +219,8 @@ footer a {
 }
 
 .bio p {
-  font-weight: 200;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
   margin-right: 4em;
   margin-top: 2px;
   text-align: justify;
@@ -213,11 +228,11 @@ footer a {
 
 .bio h2 {
   margin-bottom: 2px;
+  font-weight: 900;
 }
 
 .skill h2 {
   margin-bottom: 2px;
-  margin-top: 2em;
 }
 
 .skill h5 {
@@ -229,11 +244,11 @@ footer a {
 }
 
 .bio {
-  margin-top: 6em;
+  margin-top: 2em;
 }
 
 .skill {
-  margin-top: 4em;
+  margin-top: 2em;
   width: 30%;
 }
 
