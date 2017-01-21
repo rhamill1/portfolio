@@ -367,6 +367,31 @@ footer a:hover {
   }
 }
 
+@media (max-width: 860px) {
+  .slim-title h1 {
+    font-size: 25px;
+    padding-top: 2em;
+    margin-top: 13px;
+  }
+  .skills-top {
+    width: 90%;
+  }
+}
+
+@media (max-width: 660px) {
+  .title-center {
+    width: 95%;
+  }
+
+  .slim-title h1 {
+    font-size: 15px;
+    padding-top: 4em;
+  }
+
+  .skills-top h5 {
+    margin: 0 1em;
+  }
+}
 
 @media (max-width: 600px) {
   .about-me {
@@ -400,4 +425,26 @@ footer a:hover {
   #highchart_id {
     width: 73%;
   }
+}
+
+
+@media (max-width: 460px) {
+  .full-stack-title h1 {
+    margin-bottom: 0;
+  }
+
+  .slim-title h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .skills-top {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .full-stack-title {
+    height: 220px;
+  }
+
 }
