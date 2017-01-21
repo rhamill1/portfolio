@@ -337,7 +337,11 @@ footer a:hover {
 
 @media (max-width: 950px) {
   .about-me {
-    height: 47em;
+    height: 54em;
+  }
+
+  .about-white {
+    height: 48em;
   }
 
   .bio {
@@ -395,7 +399,11 @@ footer a:hover {
 
 @media (max-width: 600px) {
   .about-me {
-    height: 55em;
+    height: 62em;
+  }
+
+  .about-white {
+    height: 56em;
   }
 
   footer a {
