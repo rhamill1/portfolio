@@ -78,6 +78,7 @@ h1, h5 {
 .project-index {
   background-color: #F7F7F7;
   height: auto;
+  overflow: auto;
   color: white;
   margin: auto;
 }
@@ -335,6 +336,30 @@ footer a:hover {
 
 
 
+@media (max-width: 1200px) {
+  .project-white {
+    float: left;
+    margin: 2px 2em;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 90%;
+    min-height: 90%;
+  }
+
+  .project img {
+    margin-bottom: 0;
+    float: left;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 90%;
+    min-height: 90%;
+  }
+}
+
 @media (max-width: 950px) {
   .about-me {
     height: 54em;
@@ -377,6 +402,7 @@ footer a:hover {
     padding-top: 2em;
     margin-top: 13px;
   }
+
   .skills-top {
     width: 90%;
   }
@@ -414,20 +440,12 @@ footer a:hover {
     width: 100%;
   }
 
-  .project-index {
-    height: inherit;
-  }
-
   .grey-media {
     display: none;
   }
 
   .project p {
     bottom: 3em;
-  }
-
-  .project h3 {
-    bottom: 10em;
   }
 
   #highchart_id {
