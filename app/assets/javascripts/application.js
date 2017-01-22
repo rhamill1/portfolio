@@ -32,5 +32,5 @@ window.onload = function() {
     horizontalScrolling: false
   });
 
-
+  alert('some-unique-string');
 }
