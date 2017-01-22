@@ -20,7 +20,7 @@
 //= require highcharts/highstock
 
 //= require jquery.stellar.min.js
-
+//= require application.js
 
 window.onload = function() {
 
