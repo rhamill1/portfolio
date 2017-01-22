@@ -21,4 +21,3 @@
 
 //= require parallax.js
 //= require jquery.stellar.min.js
-
