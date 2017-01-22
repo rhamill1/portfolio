@@ -19,11 +19,18 @@
 //= require highcharts/highcharts-more
 //= require highcharts/highstock
 
+//= require jquery.stellar.min.js
+
 
 window.onload = function() {
 
-  $( "#chevron-scroll" ).click(function() {
-    $("html, body").animate({ scrollTop: 650 }, 1000);
+  // $( "#chevron-scroll" ).click(function() {
+  //   $("html, body").animate({ scrollTop: 650 }, 1000);
+  // });
+
+  $(window).stellar({
+    horizontalScrolling: false
   });
+
 
 }

@@ -33,6 +33,8 @@ h1, h5 {
 .title-center {
   float: right;
   width: 80%;
+  position: relative;
+  z-index: 9;
 }
 
 .bold-title h1 {
@@ -54,7 +56,11 @@ h1, h5 {
 
 .skills-top {
   float: right;
-  width: 70%;
+  /*width: 60%;*/
+  position: absolute;
+  padding-top: 8em;
+  padding-left: 15em;
+  line-height: -300px;
 }
 
 .full-stack-title h5 {
@@ -68,6 +74,9 @@ h1, h5 {
   text-align: center;
   height: 175px;
   background-color: #eee;
+  z-index: 100;
+  overflow: auto;
+  position: relative;
 }
 
 .highchart h5 {
@@ -412,6 +421,10 @@ footer a:hover {
 }
 
 @media (max-width: 950px) {
+  .skills-top {
+    padding-left: 10em;
+  }
+
   .about-me {
     height: 54em;
   }
@@ -455,7 +468,7 @@ footer a:hover {
   }
 
   .skills-top {
-    width: 90%;
+    padding-left: 5em;
   }
 }
 
@@ -475,6 +488,10 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  .skills-top {
+    padding-left: 1em;
+  }
+
   .about-me {
     height: 62em;
   }
