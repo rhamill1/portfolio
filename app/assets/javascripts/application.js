@@ -13,13 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.stellar.min.js
 //= require_tree .
 
 //= require highcharts/highcharts
 //= require highcharts/highcharts-more
 //= require highcharts/highstock
 
-//= require jquery.stellar.min.js
 
 
 window.onload = function() {
