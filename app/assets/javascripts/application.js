@@ -19,7 +19,7 @@
 //= require highcharts/highstock
 
 //= require jquery.stellar.min.js
-//= require_tree .
+
 
 
 window.onload = function() {
