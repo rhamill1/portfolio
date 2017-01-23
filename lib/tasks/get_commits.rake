@@ -5,14 +5,13 @@ namespace :process do
     require 'json'
 
     # client / get_repos
-    source_repos_owned_hash_unformatted = `curl -H ENV['GIT_AUTHORIZATION_STRING'] \
-      https://api.github.com/users/rhamill1/repos?per_page=100`
+    gitAuthString = ENV['GIT_AUTHORIZATION_STRING']
 
-    # dev client / get_repos
-    # source_repos_owned_hash_unformatted = `curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" \
-    #   https://api.github.com/users/rhamill1/repos?per_page=100`
 
-    # format response
+    source_repos_owned_hash_unformatted = ENV['CURL_COMMAND']
+    source_repos_owned_hash_unformatted = %x{ #{source_repos_owned_hash_unformatted} }
+
+    # # format response
     repos_owned_hash = JSON.parse(source_repos_owned_hash_unformatted)
 
     # get repo names
@@ -25,7 +24,8 @@ namespace :process do
     @all_compiled_commits = []
     @repos.each do |repo|
       # build request
-      curl_repo_commits = 'curl -H "Authorization: token $GIT_AUTHORIZATION_TOKEN" https://api.github.com/repos/rhamill1/' + repo + '/commits?per_page=100'
+      curl_repo_commits = "curl -H " + gitAuthString + " \
+        https://api.github.com/repos/rhamill1/" + repo + "/commits?per_page=100"
       source_commits_hash_unformatted = %x{ #{curl_repo_commits} }
 
       commits_hash = JSON.parse(source_commits_hash_unformatted, :symbolize_names => true)
