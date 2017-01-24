@@ -8,11 +8,19 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
 
+    Aws.config.update(
+      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_KEY'],
+      force_path_style: true,
+      region: ENV['AWS_REGION']
+    )
 
-    final_array_dirty = File.open('lib/assets/final_array.json', 'r').read
+    s3_client = Aws::S3::Client.new
+
+    final_array_dirty = s3_client.get_object(bucket: 'portfolio-json', key: 'final_array.json').body.read
     final_array = JSON.parse(final_array_dirty)
 
-    first_monday_o_month_array_dirty = File.open('lib/assets/first_monday_o_month_array.json', 'r').read
+    first_monday_o_month_array_dirty = s3_client.get_object(bucket: 'portfolio-json', key: 'first_monday_o_month_array.json').body.read
     first_monday_o_month_array = JSON.parse(first_monday_o_month_array_dirty)
 
 

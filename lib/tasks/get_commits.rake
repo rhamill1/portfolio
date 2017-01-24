@@ -3,6 +3,8 @@ namespace :process do
   task :get_commits => :environment do
 
     require 'json'
+    require 'aws-sdk'
+    require "s3"
 
     # client / get_repos
     gitAuthString = ENV['GIT_AUTHORIZATION_STRING']
@@ -97,20 +99,41 @@ namespace :process do
       end
         final_array.push([project, monday_count])
     end
-    # save final array as json file
-    File.open('lib/assets/final_array.json', 'w') do |f|
-      f.write(final_array.to_json)
-    end
 
+
+    Aws.config.update(
+      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_KEY'],
+      force_path_style: true,
+      region: ENV['AWS_REGION']
+    )
+
+    s3_client = Aws::S3::Client.new
+
+    s3_client.delete_object(key: 'final_array.json', bucket: 'portfolio-json')
+
+    s3_client.put_object(
+      key: 'final_array.json',
+      body: final_array.to_json,
+      bucket: 'portfolio-json',
+      content_type: 'application/json',
+      acl: 'public-read'
+    )
 
     first_monday_o_month_array = []
     all_mondays.each do |monday|
         monday.strftime("%d").to_i <= 7 ? first_monday_o_month_array.push(monday.strftime("%b %y")) : first_monday_o_month_array.push("")
     end
-    # save final array as json file
-    File.open('lib/assets/first_monday_o_month_array.json', 'w') do |f|
-      f.write(first_monday_o_month_array.to_json)
-    end
+
+    s3_client.delete_object(key: 'first_monday_o_month_array.json', bucket: 'portfolio-json')
+
+    s3_client.put_object(
+      key: 'first_monday_o_month_array.json',
+      body: first_monday_o_month_array.to_json,
+      bucket: 'portfolio-json',
+      content_type: 'application/json',
+      acl: 'public-read'
+    )
 
 
     puts 'process:get_commits ran successfully'
