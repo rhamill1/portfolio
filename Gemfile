@@ -26,6 +26,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'lazy_high_charts'
 gem 'aws-sdk'
 gem 's3'
+gem 'figaro'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

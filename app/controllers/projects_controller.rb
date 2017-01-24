@@ -9,10 +9,10 @@ class ProjectsController < ApplicationController
     @projects = Project.all
 
     Aws.config.update(
-      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-      secret_access_key: ENV['AWS_SECRET_KEY'],
+      access_key_id: ENV["AWS_ACCESS_KEY_ID"],
+      secret_access_key: ENV["AWS_SECRET_KEY"],
       force_path_style: true,
-      region: ENV['AWS_REGION']
+      region: ENV["AWS_REGION"]
     )
 
     s3_client = Aws::S3::Client.new
