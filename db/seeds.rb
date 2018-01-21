@@ -6,8 +6,8 @@ Project.create([
     sub_title: "Free Range Text for Your Project",
     primary_image: "http://imgur.com/Io0yde3.png",
     index_image: "http://imgur.com/Io0yde3.png",
-    github: "https://www.github.com/rhamill1/farmers_market_ipsum",
-    url: "https://farmersmarketipsum.herokuapp.com/",
+    github: 'https://www.github.com/rhamill1/farmers_market_ipsum',
+    url: 'https://farmersmarketipsum.herokuapp.com/',
     tech: "JavaScript, jQuery, Stellar.js, HTML/CSS, Heroku",
     completion_date: "January 2017"
   },
