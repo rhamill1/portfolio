@@ -1,6 +1,17 @@
 
 Project.create([
   {
+    project_name: "Awesome OS",
+    description: "Rebrand for international staffing agency Awesome OS.",
+    sub_title: "Customer Support, Web Development, Graphic Design, Back Office Support",
+    primary_image: "https://i.imgur.com/Xr6XmFy.png",
+    index_image: "https://i.imgur.com/Xr6XmFy.png",
+    github: "https://github.com/rhamill1/awesome_os",
+    url: "https://damp-shelf-63450.herokuapp.com/",
+    tech: "Node, Javascript, Heroku, Nodemailer, HTML/CSS",
+    completion_date: "June 2017"
+  },
+  {
     project_name: "Farmers' Market Ipsum",
     description: "Recreating great precedent is an efficient way to master new skills. This theme is an interpretation from scratch of Anders Noren's Hipster Ipsum. It was created using JavaScript, jQuery, CSS, HTML, Node and Express (no Bootstrap).",
     sub_title: "Free Range Text for Your Project",
@@ -21,6 +32,17 @@ Project.create([
     url: "https://amzpro.herokuapp.com",
     tech: "Ruby, Rails, Heroku, HTML/CSS, Amazon MWS, OAuth, ChartKick",
     completion_date: "November 2016"
+  },
+  {
+    project_name: "Coy Toy Box",
+    description: "Proof of concept web application and idea submition application for a boutique manufacturer.",
+    sub_title: "Crowdsourced Boutique",
+    primary_image: "https://i.imgur.com/JkI56ma.png",
+    index_image: "https://i.imgur.com/JkI56ma.png",
+    github: "https://github.com/rhamill1/youllneverguess",
+    url: "https://www.coytoybox.com",
+    tech: "Ruby, Rails, SimpleCaptcha, HTML/CSS, Heroku",
+    completion_date: "December 2017"
   },
   {
     project_name: "Band Wagon",
