@@ -23,16 +23,16 @@
 <div class='project-index'>
   <% @projects.each do |project| %>
     <div class='project'>
-      <%= link_to image_tag(project.index_image), project.url, data: { no_turbolink: true } %>
+      <%= link_to image_tag(project.index_image), project.url, :data => { :no_turbolink => true } %>
       <div class='project-white'>
         <h2><%= project.project_name %></h2>
         <h4><%= project.sub_title %></h4>
         <h5><%= project.tech %></h5>
         <h3><%= project.description %></h3>
         <h3>
-          <%= link_to 'visit the project', project.url, data: { no_turbolink: true } %>
+          <a href= <%= project.url %> >visit the project</a>
           <span>|</span>
-          <%= link_to 'project git repo', project.github, data: { no_turbolink: true } %>
+          <a href= <%= project.github %> >project git repo</a>
         </h3>
         <h3>
           completed
