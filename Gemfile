@@ -26,6 +26,7 @@ gem 'lazy_high_charts'
 gem 'aws-sdk'
 gem 's3'
 gem 'figaro'
+gem 'rack-cors', :require => 'rack/cors'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
