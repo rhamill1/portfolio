@@ -40,7 +40,7 @@ Project.create([
     primary_image: "https://i.imgur.com/JkI56ma.png",
     index_image: "https://i.imgur.com/JkI56ma.png",
     github: "https://github.com/rhamill1/youllneverguess",
-    url: "https://www.coytoybox.com",
+    url: "https://coytoybox.herokuapp.com",
     tech: "Ruby, Rails, SimpleCaptcha, HTML/CSS, Heroku",
     completion_date: "December 2017"
   },
